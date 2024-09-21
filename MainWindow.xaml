@@ -1,0 +1,23 @@
+﻿<Window x:Class="CF_Dialog_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dialog_Example"
+        mc:Ignorable="d"
+        Title="Color and Font dialog example" Height="160" Width="388">
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem x:Name="miOpen" Header="File"  >
+				<MenuItem x:Name="miExit" Header="Exit" Click="miExit_Click" />
+			</MenuItem>
+			<MenuItem Header="Properties">
+				<MenuItem x:Name="miBColor" Header="Background color" Click="miBColor_Click" />
+				<MenuItem x:Name="miFont" Header="Font" Click="miFont_Click" />
+			</MenuItem>
+		</Menu>
+		<TextBlock x:Name="tkTest" FontFamily="Arial" FontSize="36" Margin="30">
+			Sample text
+		</TextBlock>
+	</DockPanel>
+</Window>
